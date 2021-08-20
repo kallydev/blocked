@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css"
+          integrity="sha256-T2eDxQVGGYFyjBY91wKHMUcahQH0KrxYA51fRZvWGjA=" crossorigin="anonymous">
+    <title>Website blocked</title>
+    <style>
+        .zigzag {
+            background-image: linear-gradient(
+                    45deg,
+                    #E5E7EB 10px, transparent 0
+            ),
+            linear-gradient(
+                    -45deg,
+                    #E5E7EB 10px, #B91C1C 0
+            );
+            background-position: bottom center, bottom center;
+            background-size: 1rem 1rem, 1rem 1rem;
+            background-repeat: repeat-x;
+        }
+    </style>
+</head>
+<body class="flex flex-col h-full">
+<header class="bg-red-700 p-8 lg:p-12 zigzag">
+    <div class="container mx-auto flex flex-col items-center text-white space-y-4">
+        <p class="uppercase font-serif text-sm md:text-xl">The firewall of the united states</p>
+        <h1 class="uppercase text-3xl font-bold md:text-6xl lg:text-8xl">Website blocked</h1>
+        <p class="text-sm flex flex-col items-center md:block md:text-base">
+            <span>This site has been blocked to Americans by</span>
+            <span>the US Government Firewall</span>
+        </p>
+    </div>
+</header>
+<main class="p-8 lg:p-16 lg:px-32 xl:px-48 bg-gray-200 flex-1">
+    <div class="container mx-auto space-y-12">
+        <div class="flex flex-col md:flex-row flex-wrap justify-center items-center space-y-4 md:space-x-8">
+            <img class="w-32 md:w-48 lg:w-64 xl:w-72"
+                 src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Seal_of_the_U.S._National_Security_Agency.svg"/>
+            <div class="flex space-x-8">
+                <img class="w-32 md:w-48 lg:w-64 xl:w-72"
+                     src="https://upload.wikimedia.org/wikipedia/commons/2/25/Seal_of_the_Central_Intelligence_Agency.svg"/>
+                <img class="w-32 md:w-48 lg:w-64 xl:w-72"
+                     src="https://upload.wikimedia.org/wikipedia/commons/d/da/Seal_of_the_Federal_Bureau_of_Investigation.svg"/>
+            </div>
+        </div>
+        <p class="text-xl lg:leading-normal font-bold text-gray-600 lg:text-3xl">
+            This site pretends to be blocked by the CIA and the FBI and the NSA, but it's actually a really boring joke
+            by the site's author. Since I didn't really know what to put on the front page of my site to make it
+            interesting, I saw a blocking page similar to this in a Netflix documentary and made it happen. If you like
+            this page, you can go to its
+            <a target="_blank" href="https://github.com/kallydev/blocked" class="text-blue-500 underline">GitHub</a>
+            repository and give it a star.
+        </p>
+    </div>
+</main>
+</body>
+</html>
